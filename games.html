@@ -2,28 +2,83 @@
 <html>
 <head>
   <title>A Game</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 30pt;
+            vertical-align: middle;
+            color: #9158db
+        }
+        input[type=text] {
+            width: 200px;
+            height: 20pt;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            vertical-align: top;
+            }
+
+        input[type = radio] {
+            transform: scale(2);
+            margin: 10px;
+            vertical-align: middle;
+        }
+
+        input[type=checkbox] {
+            border: 0px;
+            width: 2em;
+            height: 2em;
+            display: inline-block
+        }
+
+        .dropdown {
+            font-size: 20pt;
+        }
+
+        #green {
+            color:green;
+        }
+        #orange {
+            color:orange
+        }
+        #blue {
+            color:blue
+        }
+        #pink {
+            color:pink
+        }
+        #red {
+            color:red
+        }
+        #purple {
+            color:purple
+        }
+
+ 
+    </style>
 </head>
 <body>
 <form action="/madlib">
+    <div>
     <label>Pick a person</label>
     <input type="text" name="person">
-    <br>
+    </div>
     Choose a color
-    <input type="radio" name="color" value="green">
-    <label>Green</label>
-    <input type="radio" name="color" value="pink">
-    <label>Pink</label>
-    <input type="radio" name="color" value="blue">
-    <label>Blue</label>
-    <input type="radio" name="color" value="orange">
-    <label>Orange</label>
-    <input type="radio" name="color" value="purple">
-    <label>Purple</label>
-    <input type="radio" name="color" value="red">
-    <label>Red</label>
+    <input type="radio" name="color" value="green" class="radio">
+    <label id="green" >Green</label>
+    <input type="radio" name="color" value="pink" class="radio">
+    <label id="pink">Pink</label>
+    <input type="radio" name="color" value="blue" class="radio">
+    <label id="blue">Blue</label>
+    <input type="radio" name="color" value="orange" class="radio">
+    <label id="orange">Orange</label>
+    <input type="radio" name="color" value="purple" class="radio">
+    <label id="purple">Purple</label>
+    <input type="radio" name="color" value="red" class="radio">
+    <label id="red">Red</label>
     <br>
     Choose a noun
-    <select name="noun">
+    <select name="noun" class="dropdown">
         <option value="house">House</option>
         <option value="mouse">Mouse</option>
         <option value="car">Car</option>
@@ -33,15 +88,27 @@
     </select>
     <br>
     Select an adjective
-    <select name="adjective">
-        <option value="happy">Happy</option>
-        <option value="sad">Sad</option>
+    <select name="adjective" class="dropdown">
+        <option value="funny">Funny</option>
+        <option value="nice">Nice</option>
         <option value="beautiful">Beautiful</option>
         <option value="smart">Smart</option>
         <option value="creative">Creative</option>
         <option value="crazy">Crazy</option>
         <option value="fun">Fun</option>
     </select>
+    <br>
+
+    Choose what moods you're feeling today<br>
+    <input type="checkbox" name="moods" value="happy">
+    <label>Happy</label> <br>
+    <input type="checkbox" name="moods" value="sad">
+    <label>Sad</label> <br>
+    <input type="checkbox" name="moods" value="anxious">
+    <label>Anxious</label> <br>
+    <input type="checkbox" name="moods" value="excited">
+    <label>Excited</label> 
+    <br>
 
     <input type="submit">
     

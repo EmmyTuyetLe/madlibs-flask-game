@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    font-size: 30pt;
+    vertical-align: middle;
+    color: #9158db
+}
+input[type=text] {
+    width: 200px;
+    height: 20pt;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    }
+
+input[type = radio] {
+    transform: scale(2);
+    margin: 10px;
+    vertical-align: middle;
+}
+
+input[type=checkbox] {
+    border: 0px;
+    width: 2em;
+    height: 2em;
+    display: inline-block
+}
+
+.dropdown {
+    font-size: 20pt;
+}
+
+#green {
+    color:green;
+}
+#orange {
+    color:orange
+}
+#blue {
+    color:blue
+}
+#pink {
+    color:pink
+}
+#red {
+    color:red
+}
+#purple {
+    color:purple
+}

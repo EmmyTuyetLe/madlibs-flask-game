@@ -6,5 +6,11 @@
 <body>
     There once was a {{ color }} {{ noun }}. One day it looked very {{ adjective }}. 
     {{ person }} bought it and then gave it a hug.
+
+    It made {{person}} feel 
+    {% for mood in moods %} 
+    {{mood}} 
+    {% endfor%}
+    .
 </body>
 </html>
